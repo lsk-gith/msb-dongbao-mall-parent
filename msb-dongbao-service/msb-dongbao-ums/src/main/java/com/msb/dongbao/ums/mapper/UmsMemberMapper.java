@@ -1,6 +1,6 @@
 package com.msb.dongbao.ums.mapper;
 
-import com.msb.dongbao.ums.entity.UmsMember;
+import com.msb.dongbao.api.entity.UmsMember;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

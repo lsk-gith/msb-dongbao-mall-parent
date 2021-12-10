@@ -1,9 +1,8 @@
 package com.msb.dongbao.ums;
 
-import com.msb.dongbao.ums.entity.UmsMember;
+import com.msb.dongbao.api.entity.UmsMember;
 import com.msb.dongbao.ums.mapper.UmsMemberMapper;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
@@ -14,14 +13,14 @@ import javax.annotation.Resource;
  * @Description: com.msb.dongbao.ums
  * @Version: 1.0
  */
-@SpringBootTest(classes = com.msb.dongbao.ums.MsbDongbaoUmsApplication.class)
+@SpringBootTest(classes = MsbDongbaoUmsApplication.class)
 public class UserMemberTest {
     @Resource
      UmsMemberMapper umsMemberMapper;
     @Test
     void insertTest(){
         UmsMember t = new UmsMember();
-        t.setUsername("lsk3");
+        t.setUsername("lsk2");
         t.setStatus(0);
         t.setPassword("lsk@285975");
         t.setNote("note");

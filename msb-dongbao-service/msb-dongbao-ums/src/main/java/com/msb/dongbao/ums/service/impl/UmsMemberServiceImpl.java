@@ -1,10 +1,12 @@
 package com.msb.dongbao.ums.service.impl;
 
-import com.msb.dongbao.ums.entity.UmsMember;
+import com.msb.dongbao.api.entity.UmsMember;
 import com.msb.dongbao.ums.mapper.UmsMemberMapper;
-import com.msb.dongbao.ums.service.UmsMemberService;
+import com.msb.dongbao.api.service.UmsMemberService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -16,5 +18,14 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UmsMemberServiceImpl extends ServiceImpl<UmsMemberMapper, UmsMember> implements UmsMemberService {
+    @Resource
+    UmsMemberMapper umsMemberMapper;
+    public String register(){
+        UmsMember user = new UmsMember();
+        user.setUsername("haha");
+        user.setPassword("123456");
+        umsMemberMapper.insert(user);
+        return "success";
+    }
 
 }
