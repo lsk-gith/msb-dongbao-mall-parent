@@ -14,18 +14,8 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-dongbao-api/test/pom.xml" />
         <option value="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/pom.xml" />
         <option value="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-dongbao-oms-api/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-cart/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-cms/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-dictionary/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-oms/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-pay/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-pms/pom.xml" />
-        <option value="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-sms/pom.xml" />
         <option value="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/pom.xml" />
       </set>
     </option>

@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author lsk
  * @since 2021-12-09
  */
-public interface UmsMemberMapper extends BaseMapper<UmsMember> {
 
+public interface UmsMemberMapper extends BaseMapper<UmsMember> {
 }

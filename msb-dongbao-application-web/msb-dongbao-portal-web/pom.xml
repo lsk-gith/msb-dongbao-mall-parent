@@ -16,11 +16,13 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+        <!--添加api引用       -->
         <dependency>
             <groupId>com.msb.dongbao.ums</groupId>
             <artifactId>msb-dongbao-ums-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!--添加ums引用       -->
         <dependency>
             <groupId>com.msb.dongbao.ums</groupId>
             <artifactId>msb-dongbao-ums</artifactId>
@@ -65,6 +67,20 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
+                <resources>
+                    <resource>
+                        <directory>src/main/resources</directory>
+                    </resource>
+                    <resource>
+                        <directory>src/main/java</directory>
+                        <includes>
+                            <include>**/*.xml</include>
+                        </includes>
+                    </resource>
+                </resources>
+
+
     </build>
 
 </project>

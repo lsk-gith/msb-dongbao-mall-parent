@@ -34,10 +34,11 @@ public class UserMemberTest {
     @Test
     void testUpdate(){
         UmsMember t = new UmsMember();
-        t.setNickName("尴尬");
-        t.setId(16L);
+        t.setNickName("美滋滋");
+        t.setId(22L);
 
         umsMemberMapper.updateById(t);
     }
+
 
 }
