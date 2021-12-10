@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册">
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/src/main/java/com/msb/dongbao/api/entity/UserRegisterDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/entity/UmsMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/test/java/com/msb/dongbao/ums/md5/encoderOrDecoderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/src/main/java/com/msb/dongbao/api/service/UmsMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/src/main/java/com/msb/dongbao/api/service/UmsMemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/UmsMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/UmsMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/MsbDongbaoPortalWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/MsbDongbaoPortalWebApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/MsbDongbaoUmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/MsbDongbaoUmsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/mapper/UmsMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/mapper/UmsMemberMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/service/impl/UmsMemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/service/impl/UmsMemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/test/java/com/msb/dongbao/ums/UserMemberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/test/java/com/msb/dongbao/ums/UserMemberTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,37 +109,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.MsbDongbaoPortalWebApplication">
-    <configuration name="UserMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="msb-dongbao-ums" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.dongbao.ums.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.msb.dongbao.ums" />
-      <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.ums.UserMemberTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserMemberTest.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="msb-dongbao-ums" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.dongbao.ums.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.msb.dongbao.ums" />
-      <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.ums.UserMemberTest" />
-      <option name="METHOD_NAME" value="insertTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserMemberTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msb-dongbao-ums" />
       <extension name="coverage">
@@ -164,17 +125,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMemberTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="encoderOrDecoderTest.bcrypt (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msb-dongbao-ums" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.msb.dongbao.ums.*" />
+          <option name="PATTERN" value="com.msb.dongbao.ums.md5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.msb.dongbao.ums" />
-      <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.ums.UserMemberTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="PACKAGE_NAME" value="com.msb.dongbao.ums.md5" />
+      <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.ums.md5.encoderOrDecoderTest" />
+      <option name="METHOD_NAME" value="bcrypt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="encoderOrDecoderTest.bcrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="msb-dongbao-portal-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msb.dongbao.ums.md5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msb.dongbao.portal.md5" />
+      <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.ums.md5.encoderOrDecoderTest" />
+      <option name="METHOD_NAME" value="bcrypt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="encoderOrDecoderTest.encoderOrDecode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="msb-dongbao-portal-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msb.dongbao.ums.md5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msb.dongbao.portal.md5" />
+      <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.ums.md5.encoderOrDecoderTest" />
+      <option name="METHOD_NAME" value="encoderOrDecode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -236,23 +229,23 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserMemberTest" />
-      <item itemvalue="JUnit.UserMemberTest.insertTest" />
-      <item itemvalue="JUnit.UserMemberTest.testUpdate" />
       <item itemvalue="Spring Boot.MsbDongbaoManagerWebApplication" />
       <item itemvalue="Spring Boot.MsbDongbaoUmsApplication" />
       <item itemvalue="Spring Boot.MsbDongbaoPortalWebApplication" />
       <item itemvalue="Spring Boot.MsbDongbaoGeneatorApplication" />
       <item itemvalue="Spring Boot.MsbDongbaoUmsApiApplication" />
       <item itemvalue="JUnit.UserMemberTest.testSelect" />
+      <item itemvalue="JUnit.encoderOrDecoderTest.encoderOrDecode" />
+      <item itemvalue="JUnit.encoderOrDecoderTest.bcrypt" />
+      <item itemvalue="JUnit.encoderOrDecoderTest.bcrypt (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MsbDongbaoPortalWebApplication" />
+        <item itemvalue="JUnit.encoderOrDecoderTest.bcrypt (1)" />
+        <item itemvalue="JUnit.encoderOrDecoderTest.bcrypt" />
+        <item itemvalue="JUnit.encoderOrDecoderTest.encoderOrDecode" />
         <item itemvalue="JUnit.UserMemberTest.testSelect" />
-        <item itemvalue="JUnit.UserMemberTest.testUpdate" />
-        <item itemvalue="JUnit.UserMemberTest.insertTest" />
-        <item itemvalue="JUnit.UserMemberTest" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639137840290</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册">
+      <created>1639137905594</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639137905594</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
