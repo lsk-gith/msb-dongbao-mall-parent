@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner">
+    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册">
       <change afterPath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/src/main/java/com/msb/dongbao/api/entity/UserRegisterDto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/entity/UmsMember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -292,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639104572039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册">
+      <created>1639137840290</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639137840290</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +375,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner" />
-    <option name="LAST_COMMIT_MESSAGE" value="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner" />
+    <MESSAGE value="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册" />
   </component>
 </project>
