@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册">
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/test/java/com/msb/dongbao/ums/md5/encoderOrDecoderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/MsbDongbaoPortalWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/MsbDongbaoPortalWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/service/impl/UmsMemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/service/impl/UmsMemberServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="设置密码脱密" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639137905594</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="设置密码脱密">
+      <created>1639142056674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639142056674</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,6 +376,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner" />
     <MESSAGE value="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册" />
-    <option name="LAST_COMMIT_MESSAGE" value="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册" />
+    <MESSAGE value="设置密码脱密" />
+    <option name="LAST_COMMIT_MESSAGE" value="设置密码脱密" />
   </component>
 </project>
