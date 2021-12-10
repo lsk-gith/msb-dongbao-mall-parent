@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="" />
+    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner">
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/src/main/java/com/msb/dongbao/manager/MsbDongbaoManagerWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/src/test/java/com/msb/dongbao/manager/MsbDongbaoManagerWebApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/MsbDongbaoPortalWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/UmsMemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/test/java/com/msb/dongbao/portal/MsbDongbaoPortalWebApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/src/main/java/com/msb/dongbao/ums/MsbDongbaoUmsApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/src/main/java/com/msb/dongbao/api/MsbDongbaoUmsApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/src/test/java/com/msb/dongbao/ums/MsbDongbaoUmsApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-ums-api/src/test/java/com/msb/dongbao/api/MsbDongbaoUmsApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +43,9 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,16 +67,25 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="9e3bbcf4-6026-41a3-a19d-dd194fc226dd" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="21zbf3dRhLteXwb22bGIHHfEXAN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ChangesTree.GroupingKeys" value="module" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -52,17 +95,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14084506" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-application-web\msb-dongbao-portal-web\src\main\resources" />
       <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-service\msb-dongbao-ums\src\main\resources" />
       <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-service\msb-dongbao-ums\src\main\java\com\msb\dongbao\ums" />
       <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-api" />
@@ -83,7 +127,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserMemberTest.testUpdate">
+  <component name="RunManager" selected="Spring Boot.MsbDongbaoPortalWebApplication">
     <configuration name="DongbaoGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.generator.DongbaoGenerator" />
       <module name="msb-dongbao-geneator" />
@@ -128,22 +172,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMemberTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="msb-dongbao-ums" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.msb.dongbao.ums" />
-      <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.ums.UserMemberTest" />
-      <option name="METHOD_NAME" value="testInsert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserMemberTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msb-dongbao-ums" />
       <extension name="coverage">
@@ -160,170 +188,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MsbDongbaoCartApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-cart-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msbdongbao.cart.MsbDongbaoCartApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoCartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-cart" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.cart.MsbDongbaoCartApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoCmsApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-cms-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dongbao.cms.MsbDongbaoCmsApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoCmsApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-cms" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.cms.MsbDongbaoCmsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoCmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-cms" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.msbdongbaocms.MsbDongbaoCmsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoCommonBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-common-base" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.common.MsbDongbaoCommonBaseApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoCommonUtilApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-common-util" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.common.MsbDongbaoCommonUtilApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoDictionaryApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-dictionary-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.dictionary.MsbDongbaoDictionaryApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoDictionaryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-dictionary" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.dictionary.MsbDongbaoDictionaryApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoGeneatorApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-geneator" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.generator.MsbDongbaoGeneatorApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoGeneatorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-geneator" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.msbdongbaogeneator.MsbDongbaoGeneatorApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MsbDongbaoManagerWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="msb-dongbao-manager-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.manager.MsbDongbaoManagerWebApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MsbDongbaoOmsApiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-oms-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.oms.MsbDongbaoOmsApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoOmsApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-oms-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.oms.msbdongbaoomsapi.MsbDongbaoOmsApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoOmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-oms" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.oms.MsbDongbaoOmsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoPayApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-pay-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.pay.MsbDongbaoPayApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoPayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-pay" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.pay.MsbDongbaoPayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoPmsApiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-pms-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dongbao.pms.MsbDongbaoPmsApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoPmsApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-pms-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dongbao.pms.msbdongbaopmsapi.MsbDongbaoPmsApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoPmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-pms" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.pms.MsbDongbaoPmsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoPortalWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="MsbDongbaoPortalWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="msb-dongbao-portal-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msb.dongbao.portal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.portal.MsbDongbaoPortalWebApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoSmsApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-sms-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.sms.MsbDongbaoSmsApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoSmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-sms" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.sms.MsbDongbaoSmsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsbDongbaoUmsApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="msb-dongbao-ums-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.ums.MsbDongbaoUmsApiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -331,6 +213,8 @@
     <configuration name="MsbDongbaoUmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="msb-dongbao-ums" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.dongbao.ums.MsbDongbaoUmsApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -345,13 +229,22 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.DongbaoGenerator" />
+      <item itemvalue="JUnit.UserMemberTest" />
+      <item itemvalue="JUnit.UserMemberTest.insertTest" />
+      <item itemvalue="JUnit.UserMemberTest.testUpdate" />
+      <item itemvalue="Spring Boot.MsbDongbaoManagerWebApplication" />
+      <item itemvalue="Spring Boot.MsbDongbaoUmsApplication" />
+      <item itemvalue="Spring Boot.MsbDongbaoPortalWebApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserMemberTest.testUpdate" />
+        <item itemvalue="Spring Boot.MsbDongbaoPortalWebApplication" />
         <item itemvalue="JUnit.UserMemberTest.insertTest" />
+        <item itemvalue="JUnit.UserMemberTest.testUpdate" />
         <item itemvalue="JUnit.UserMemberTest" />
         <item itemvalue="Application.DongbaoGenerator" />
-        <item itemvalue="JUnit.UserMemberTest.testInsert" />
       </list>
     </recent_temporary>
   </component>
@@ -368,8 +261,16 @@
       <workItem from="1639020703990" duration="20718000" />
       <workItem from="1639050264948" duration="5353000" />
       <workItem from="1639055673604" duration="5793000" />
-      <workItem from="1639096359462" duration="819000" />
+      <workItem from="1639096359462" duration="7576000" />
     </task>
+    <task id="LOCAL-00001" summary="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner">
+      <created>1639103675318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639103675318</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +284,42 @@
             <State />
           </value>
         </entry>
+        <entry key="e88ae5f6-28c5-4d5f-9e62-d73674d7e9ae">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="e88ae5f6-28c5-4d5f-9e62-d73674d7e9ae" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner" />
+    <option name="LAST_COMMIT_MESSAGE" value="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner" />
   </component>
 </project>

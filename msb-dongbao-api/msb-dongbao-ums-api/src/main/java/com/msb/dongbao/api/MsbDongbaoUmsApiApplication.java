@@ -1,4 +1,4 @@
-package com.msb.dongbao.ums;
+package com.msb.dongbao.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
