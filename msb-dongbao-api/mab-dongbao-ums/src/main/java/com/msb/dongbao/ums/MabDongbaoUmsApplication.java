@@ -1,13 +1,13 @@
-package com.msb.dongbao.api;
+package com.msb.dongbao.ums;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MsbDongbaoUmsApiApplication {
+public class MabDongbaoUmsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MsbDongbaoUmsApiApplication.class, args);
+        SpringApplication.run(MabDongbaoUmsApplication.class, args);
     }
 
 }

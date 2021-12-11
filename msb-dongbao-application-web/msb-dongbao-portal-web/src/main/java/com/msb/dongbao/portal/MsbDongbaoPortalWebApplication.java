@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication(scanBasePackages = {"com.msb.dongbao"})
-@MapperScan("com.msb.dongbao.ums")
+@MapperScan("com.msb.dongbao.ums.mapper")
 public class MsbDongbaoPortalWebApplication {
 
     public static void main(String[] args) {

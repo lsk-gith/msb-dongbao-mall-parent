@@ -19,7 +19,7 @@
         <!--添加api引用       -->
         <dependency>
             <groupId>com.msb.dongbao.ums</groupId>
-            <artifactId>msb-dongbao-ums-api</artifactId>
+            <artifactId>mab-dongbao-ums</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--添加ums引用       -->
@@ -73,17 +73,18 @@
             </plugin>
         </plugins>
 
-                <resources>
-                    <resource>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                    <resource>
-                        <directory>src/main/java</directory>
-                        <includes>
-                            <include>**/*.xml</include>
-                        </includes>
-                    </resource>
-                </resources>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
 
 
     </build>

@@ -1,4 +1,4 @@
-package com.msb.dongbao.api.entity;
+package com.msb.dongbao.ums.entity;
 
 import lombok.Data;
 import lombok.ToString;
@@ -11,28 +11,9 @@ import lombok.ToString;
  */
 @Data
 @ToString
-public class UserRegisterDto {
+public class UserLoadDto {
     //    用户名
     private String username;
     //  密码
     private String password;
-
-    /**
-     * 头像
-     */
-    private String icon;
-
-    /**
-     * 邮箱
-     */
-    private String email;
-
-    /**
-     * 昵称
-     */
-    private String nickName;
-
-    /**
-     * 备注信息
-     */
 }

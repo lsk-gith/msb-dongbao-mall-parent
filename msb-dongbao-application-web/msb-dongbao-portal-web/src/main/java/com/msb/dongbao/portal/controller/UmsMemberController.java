@@ -1,13 +1,11 @@
 package com.msb.dongbao.portal.controller;
 
 
-import com.msb.dongbao.api.entity.UserRegisterDto;
-import com.msb.dongbao.api.service.UmsMemberService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import com.msb.dongbao.ums.entity.UserLoadDto;
+import com.msb.dongbao.ums.entity.UserRegisterDto;
+import com.msb.dongbao.ums.service.UmsMemberService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -22,7 +20,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/ums-member")
 public class UmsMemberController {
-    @Resource
+    @Autowired
     UmsMemberService umsMemberService;
 
     @GetMapping("/hello")
@@ -31,9 +29,12 @@ public class UmsMemberController {
     }
 
     @GetMapping("/register")
-    public String register(@RequestBody UserRegisterDto userRegisterDto){
+    public String registerController(@RequestBody UserRegisterDto userRegisterDto){
       return umsMemberService.register(userRegisterDto);
-//        return "register";
+    }
+    @GetMapping("/load")
+    public String loadController(@RequestBody UserLoadDto userLoadDto){
+        return umsMemberService.load(userLoadDto);
     }
 }
 

@@ -3,16 +3,17 @@ spring:
     url: jdbc:mysql://192.168.1.102:3306/dongbao?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
     password: lsk@285975
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   profiles:
     active: dev
 mybatis-plus:
+  mapper-locations: classpath*:com/msb/dongbao/ums/mapper/xml/*Mapper.xml
+  type-aliases-package: com/msb/dongbao/ums/entity
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     db-config:
       logic-delete-value: 1
       logic-not-delete-value: 0
-  mapper-locations: classpath*:com/msb/dongbao/ums/mapper/xml/*Mapper.xml
-  type-aliases-package: com/msb/dongbao/ums/api/entity
+
 

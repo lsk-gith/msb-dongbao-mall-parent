@@ -17,8 +17,8 @@
         <module name="msb-dongbao-common-util" />
         <module name="msb-dongbao-oms-api" />
         <module name="msb-dongbao-pms-api" />
+        <module name="mab-dongbao-ums" />
         <module name="msb-dongbao-cart-api" />
-        <module name="msb-dongbao-ums-api" />
         <module name="msb-dongbao-cms-api" />
         <module name="msb-dongbao-common-base" />
       </profile>
@@ -40,11 +40,13 @@
       <module name="msb-dongbao-pms-api" target="8" />
       <module name="msb-dongbao-sms" target="8" />
       <module name="msb-dongbao-sms-api" target="8" />
+      <module name="msb-dongbao-ums-api" target="8" />
       <module name="test" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mab-dongbao-ums" options="-parameters" />
       <module name="msb-dongbao-cart" options="-parameters" />
       <module name="msb-dongbao-cart-api" options="-parameters" />
       <module name="msb-dongbao-cms" options="-parameters" />

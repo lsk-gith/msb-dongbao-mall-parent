@@ -1,10 +1,10 @@
-package com.msb.dongbao.api;
+package com.msb.dongbao.ums;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsbDongbaoUmsApiApplicationTests {
+class MabDongbaoUmsApplicationTests {
 
     @Test
     void contextLoads() {

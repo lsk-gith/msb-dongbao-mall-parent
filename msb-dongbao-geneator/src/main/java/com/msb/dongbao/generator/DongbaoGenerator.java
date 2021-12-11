@@ -43,7 +43,8 @@ public class DongbaoGenerator {
         //2.数据库设置
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setUrl("jdbc:mysql://192.168.1.102:3306/dongbao?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai");
-        dsc.setDriverName("com.mysql.cj.jdbc.Driver");
+//        dsc.setDriverName("com.mysql.cj.jdbc.Driver");//mysql-connector-java 6.x及后续版本中的
+        dsc.setDriverName("com.mysql.jdbc.Driver");//mysql-connector-java 5.x及之前版本中的
         dsc.setUsername("root");
         dsc.setPassword("lsk@285975");
         dsc.setDbType(DbType.MYSQL);
