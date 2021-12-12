@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-manager-web/pom.xml" />
         <option value="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" />
         <option value="$PROJECT_DIR$/msb-dongbao-api/mab-dongbao-ums/pom.xml" />
+        <option value="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

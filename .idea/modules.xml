@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-cart-api/msb-dongbao-cart-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-cart-api/msb-dongbao-cart-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-cms-api/msb-dongbao-cms-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-cms-api/msb-dongbao-cms-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/msb-dongbao-common-base.iml" filepath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/msb-dongbao-common-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/msb-dongbao-common-util.iml" filepath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/msb-dongbao-common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-dictionary-api/msb-dongbao-dictionary-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-dictionary-api/msb-dongbao-dictionary-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-oms-api/msb-dongbao-oms-api.iml" filepath="$PROJECT_DIR$/msb-dongbao-api/msb-dongbao-oms-api/msb-dongbao-oms-api.iml" />

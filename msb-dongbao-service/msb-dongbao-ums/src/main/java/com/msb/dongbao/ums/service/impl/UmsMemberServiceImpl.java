@@ -1,5 +1,6 @@
 package com.msb.dongbao.ums.service.impl;
 
+import com.msb.dongbao.common.base.Result.ResultWrapper;
 import com.msb.dongbao.ums.entity.UmsMember;
 import com.msb.dongbao.ums.entity.UserLoadDto;
 import com.msb.dongbao.ums.entity.UserRegisterDto;
@@ -27,32 +28,32 @@ public class UmsMemberServiceImpl implements UmsMemberService {
     @Autowired
     BCryptPasswordEncoder bCryptPasswordEncoder;
     @Override
-    public String register(UserRegisterDto userRegisterDto) {
+    public ResultWrapper register(UserRegisterDto userRegisterDto) {
         UmsMember user = new UmsMember();
         BeanUtils.copyProperties(userRegisterDto,user);
         try {
             String encode = bCryptPasswordEncoder.encode(user.getPassword());
             user.setPassword(encode);
             umsMemberMapper.insert(user);
-            return "success!";
+            return ResultWrapper.getSuccessBuilder().data(null).build();
         }catch (Exception e){
-            return "userName replicate, try other userName!!!";
+            return ResultWrapper.getRuplicateUserName().data(null).build();
         }
     }
 
     @Override
-    public String load(UserLoadDto userLoadDto) {
+    public ResultWrapper load(UserLoadDto userLoadDto) {
         System.out.println(userLoadDto.getUsername() + userLoadDto.getPassword());
         UmsMember umsMember = umsMemberMapper.selectByName(userLoadDto.getUsername());
         if(null != umsMember){
             String passWord = umsMember.getPassword();
             if(bCryptPasswordEncoder.matches(userLoadDto.getPassword(),passWord)){
-                return "登陆成功";
+                return ResultWrapper.getSuccessBuilder().data(null).build();
             }else{
-                return "密码错误";
+                return ResultWrapper.getPassWordError().data(null).build();
             }
         }else{
-            return "用户不存在，登陆失败";
+            return ResultWrapper.getUserEmpty().data(null).build();
         }
     }
 }

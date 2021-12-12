@@ -1,4 +1,5 @@
 package com.msb.dongbao.ums.service;
+import com.msb.dongbao.common.base.Result.ResultWrapper;
 import com.msb.dongbao.ums.entity.UserLoadDto;
 import com.msb.dongbao.ums.entity.UserRegisterDto;
 
@@ -11,6 +12,6 @@ import com.msb.dongbao.ums.entity.UserRegisterDto;
  * @since 2021-12-09
  */
 public interface UmsMemberService {
-    public abstract String register(UserRegisterDto userRegisterDto);
-    public abstract String load(UserLoadDto userLoadDto);
+    public abstract ResultWrapper register(UserRegisterDto userRegisterDto);
+    public abstract ResultWrapper load(UserLoadDto userLoadDto);
 }
