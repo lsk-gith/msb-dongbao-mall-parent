@@ -14,5 +14,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)//表示作用的方法上
 @Retention(RetentionPolicy.RUNTIME)//保留在什么地方
 public @interface TokenCheck {
+    //是否校验token
     boolean required() default true;//默认检测token
 }
