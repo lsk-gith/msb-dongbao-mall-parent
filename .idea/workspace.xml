@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="添加token注解拦截器，和用户修改信息接口">
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/AuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" afterDir="false" />
+    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="添加token注解拦截器，和用户修改信息接口,token 增加部分代码">
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/VerifyCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/test/java/com/msb/dongbao/portal/decodeImageCode/TesseractTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/test/java/com/msb/dongbao/portal/decodeImageCode/imageCode.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/code/ImageCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/advice/GlobalExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/advice/GlobalExceptionHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +112,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsbDongbaoPortalWebApplication">
+  <component name="RunManager" selected="Application.TesseractTest">
+    <configuration name="TesseractTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.portal.decodeImageCode.TesseractTest" />
+      <module name="msb-dongbao-portal-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msb.dongbao.portal.decodeImageCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserMemberTest.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msb-dongbao-ums" />
       <extension name="coverage">
@@ -153,22 +169,6 @@
       <option name="PACKAGE_NAME" value="com.msb.dongbao.ums" />
       <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.ums.UserMemberTest" />
       <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="encoderOrDecoderTest.bcrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="msb-dongbao-ums" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.dongbao.ums.md5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.msb.dongbao.ums.md5" />
-      <option name="MAIN_CLASS_NAME" value="com.msb.dongbao.ums.md5.encoderOrDecoderTest" />
-      <option name="METHOD_NAME" value="bcrypt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -246,7 +246,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.encoderOrDecoderTest.bcrypt" />
+      <item itemvalue="Application.TesseractTest" />
       <item itemvalue="JUnit.UserMemberTest.insertTest" />
       <item itemvalue="JUnit.UserMemberTest.testUpdate" />
       <item itemvalue="JUnit.UserMemberTest.loadTest" />
@@ -255,16 +255,16 @@
       <item itemvalue="Spring Boot.MsbDongbaoGeneatorApplication" />
       <item itemvalue="Spring Boot.MabDongbaoUmsApplication" />
       <item itemvalue="Spring Boot.MsbDongbaoCommonBaseApplication" />
-      <item itemvalue="Spring Boot.MsbDongbaoPortalWebApplication" />
       <item itemvalue="Spring Boot.MsbDongbaoCommonUtilApplication" />
+      <item itemvalue="Spring Boot.MsbDongbaoPortalWebApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesseractTest" />
         <item itemvalue="Spring Boot.MsbDongbaoPortalWebApplication" />
         <item itemvalue="JUnit.UserMemberTest.testUpdate" />
         <item itemvalue="JUnit.UserMemberTest.loadTest" />
         <item itemvalue="JUnit.UserMemberTest.insertTest" />
-        <item itemvalue="JUnit.encoderOrDecoderTest.bcrypt" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +288,7 @@
       <workItem from="1639314117665" duration="659000" />
       <workItem from="1639361747441" duration="162000" />
       <workItem from="1639361942783" duration="68000" />
-      <workItem from="1639366552668" duration="13328000" />
+      <workItem from="1639366552668" duration="24370000" />
     </task>
     <task id="LOCAL-00001" summary="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner">
       <created>1639103675318</created>
@@ -458,7 +458,63 @@
       <option name="project" value="LOCAL" />
       <updated>1639381162236</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="添加token注解拦截器，和用户修改信息接口,token 增加部分代码">
+      <created>1639384269506</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1639384269506</updated>
+    </task>
+    <task id="LOCAL-00026" summary="添加token注解拦截器，和用户修改信息接口,token 增加部分代码">
+      <created>1639384358101</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1639384358101</updated>
+    </task>
+    <task id="LOCAL-00027" summary="添加token注解拦截器，和用户修改信息接口,token 增加部分代码">
+      <created>1639384390723</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1639384390723</updated>
+    </task>
+    <task id="LOCAL-00028" summary="添加token注解拦截器，和用户修改信息接口,token 增加部分代码">
+      <created>1639384534386</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1639384534386</updated>
+    </task>
+    <task id="LOCAL-00029" summary="添加token注解拦截器，和用户修改信息接口,token 增加部分代码">
+      <created>1639384621026</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1639384621026</updated>
+    </task>
+    <task id="LOCAL-00030" summary="添加token注解拦截器，和用户修改信息接口,token 增加部分代码">
+      <created>1639384672284</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1639384672284</updated>
+    </task>
+    <task id="LOCAL-00031" summary="添加token注解拦截器，和用户修改信息接口,token 增加部分代码">
+      <created>1639384740211</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1639384740211</updated>
+    </task>
+    <task id="LOCAL-00032" summary="添加token注解拦截器，和用户修改信息接口,token 增加部分代码">
+      <created>1639384764058</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1639384764058</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,6 +596,7 @@
     <MESSAGE value="登陆功能完善，" />
     <MESSAGE value="参数校验、统一异常处理、统一返回值" />
     <MESSAGE value="添加token注解拦截器，和用户修改信息接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加token注解拦截器，和用户修改信息接口" />
+    <MESSAGE value="添加token注解拦截器，和用户修改信息接口,token 增加部分代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加token注解拦截器，和用户修改信息接口,token 增加部分代码" />
   </component>
 </project>
