@@ -1,7 +1,11 @@
 package com.msb.dongbao.portal.controller;
 
 
+import com.baomidou.mybatisplus.extension.api.R;
 import com.msb.dongbao.common.base.Result.ResultWrapper;
+import com.msb.dongbao.common.base.annotations.TokenCheck;
+import com.msb.dongbao.common.util.JwtUtil.JwtUtil;
+import com.msb.dongbao.ums.entity.UmsMember;
 import com.msb.dongbao.ums.entity.UserLoadDto;
 import com.msb.dongbao.ums.entity.UserRegisterDto;
 import com.msb.dongbao.ums.service.UmsMemberService;
@@ -37,6 +41,16 @@ public class UmsMemberController {
     @GetMapping("/load")
     public ResultWrapper loadController(@RequestBody UserLoadDto userLoadDto){
         return umsMemberService.load(userLoadDto);
+    }
+    @GetMapping("/tokenTest")
+    public String tokenTest(String token){
+        String parseToken = JwtUtil.parseToken(token);
+        return parseToken;
+    }
+    @PostMapping("/edit")
+    @TokenCheck
+    public ResultWrapper editController(@RequestBody UmsMember umsMember){
+        return umsMemberService.edit(umsMember);
     }
 
 }

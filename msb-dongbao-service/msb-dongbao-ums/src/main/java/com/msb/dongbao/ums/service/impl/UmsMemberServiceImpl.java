@@ -1,6 +1,7 @@
 package com.msb.dongbao.ums.service.impl;
 
 import com.msb.dongbao.common.base.Result.ResultWrapper;
+import com.msb.dongbao.common.util.JwtUtil.JwtUtil;
 import com.msb.dongbao.ums.entity.UmsMember;
 import com.msb.dongbao.ums.entity.UserLoadDto;
 import com.msb.dongbao.ums.entity.UserRegisterDto;
@@ -48,12 +49,26 @@ public class UmsMemberServiceImpl implements UmsMemberService {
         if(null != umsMember){
             String passWord = umsMember.getPassword();
             if(bCryptPasswordEncoder.matches(userLoadDto.getPassword(),passWord)){
-                return ResultWrapper.getSuccessBuilder().data(null).build();
+                String token = JwtUtil.createToken(umsMember.getUsername());
+                return ResultWrapper.getSuccessBuilder().data(token).build();
             }else{
                 return ResultWrapper.getPassWordError().data(null).build();
             }
         }else{
             return ResultWrapper.getUserEmpty().data(null).build();
         }
+    }
+
+    @Override
+    public ResultWrapper edit(UmsMember umsMember) {
+        //这里写的有点乱，正常情况下应该是先查找到老信息，然后跟新新信息
+        String userName = umsMember.getUsername();
+        UmsMember umsMember1 = umsMemberMapper.selectByName(userName);
+        Long userId =umsMember1.getId();
+        umsMember.setId(userId);
+        String encodePassword = bCryptPasswordEncoder.encode(umsMember.getPassword());
+        umsMember.setPassword(encodePassword);
+        umsMemberMapper.updateById(umsMember);
+        return ResultWrapper.getSuccessBuilder().build();
     }
 }

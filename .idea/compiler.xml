@@ -28,7 +28,6 @@
       <module name="msb-dongbao-cart-api" target="8" />
       <module name="msb-dongbao-cms" target="8" />
       <module name="msb-dongbao-cms-api" target="8" />
-      <module name="msb-dongbao-common-util" target="8" />
       <module name="msb-dongbao-dictionary" target="8" />
       <module name="msb-dongbao-dictionary-api" target="8" />
       <module name="msb-dongbao-oms" target="8" />
