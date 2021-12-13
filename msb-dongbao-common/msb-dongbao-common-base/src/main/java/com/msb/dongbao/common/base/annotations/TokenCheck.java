@@ -11,8 +11,8 @@ import java.lang.annotation.Target;
  * @Description: com.msb.dongbao.common.base.annotations
  * @Version: 1.0
  */
-@Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)//表示作用的方法上
+@Retention(RetentionPolicy.RUNTIME)//保留在什么地方
 public @interface TokenCheck {
-    boolean required() default true;
+    boolean required() default true;//默认检测token
 }

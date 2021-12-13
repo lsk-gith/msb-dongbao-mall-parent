@@ -4,29 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="参数校验、统一异常处理、统一返回值">
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/annotations/TokenCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/src/main/java/com/msb/dongbao/common/util/JwtUtil/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/src/main/java/com/msb/dongbao/common/util/MsbDongbaoCommonUtilApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-util/src/test/java/com/msb/dongbao/common/util/MsbDongbaoCommonUtilApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="添加token注解拦截器，和用户修改信息接口">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-api/mab-dongbao-ums/src/main/java/com/msb/dongbao/ums/service/UmsMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-api/mab-dongbao-ums/src/main/java/com/msb/dongbao/ums/service/UmsMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/UmsMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/UmsMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/service/impl/UmsMemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/main/java/com/msb/dongbao/ums/service/impl/UmsMemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/test/java/com/msb/dongbao/ums/UserMemberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-service/msb-dongbao-ums/src/test/java/com/msb/dongbao/ums/UserMemberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/annotations/TokenCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/annotations/TokenCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +286,7 @@
       <workItem from="1639314117665" duration="659000" />
       <workItem from="1639361747441" duration="162000" />
       <workItem from="1639361942783" duration="68000" />
-      <workItem from="1639366552668" duration="9549000" />
+      <workItem from="1639366552668" duration="9937000" />
     </task>
     <task id="LOCAL-00001" summary="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner">
       <created>1639103675318</created>
@@ -427,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639314748984</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="添加token注解拦截器，和用户修改信息接口">
+      <created>1639380551941</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1639380551942</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,6 +495,7 @@
     <MESSAGE value="设置密码脱密" />
     <MESSAGE value="登陆功能完善，" />
     <MESSAGE value="参数校验、统一异常处理、统一返回值" />
-    <option name="LAST_COMMIT_MESSAGE" value="参数校验、统一异常处理、统一返回值" />
+    <MESSAGE value="添加token注解拦截器，和用户修改信息接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加token注解拦截器，和用户修改信息接口" />
   </component>
 </project>
