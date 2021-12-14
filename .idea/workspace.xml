@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="使用happy-captcha生成验证码">
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/HappyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/EasyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" afterDir="false" />
@@ -291,77 +291,7 @@
       <workItem from="1639361942783" duration="68000" />
       <workItem from="1639366552668" duration="24370000" />
       <workItem from="1639399366375" duration="191000" />
-      <workItem from="1639465938074" duration="12483000" />
-    </task>
-    <task id="LOCAL-00008" summary="登陆功能完善，">
-      <created>1639192146561</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1639192146561</updated>
-    </task>
-    <task id="LOCAL-00009" summary="参数校验、统一异常处理、统一返回值">
-      <created>1639313334407</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1639313334407</updated>
-    </task>
-    <task id="LOCAL-00010" summary="参数校验、统一异常处理、统一返回值">
-      <created>1639314155779</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1639314155779</updated>
-    </task>
-    <task id="LOCAL-00011" summary="参数校验、统一异常处理、统一返回值">
-      <created>1639314251707</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1639314251707</updated>
-    </task>
-    <task id="LOCAL-00012" summary="参数校验、统一异常处理、统一返回值">
-      <created>1639314320703</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1639314320703</updated>
-    </task>
-    <task id="LOCAL-00013" summary="参数校验、统一异常处理、统一返回值">
-      <created>1639314389565</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1639314389565</updated>
-    </task>
-    <task id="LOCAL-00014" summary="参数校验、统一异常处理、统一返回值">
-      <created>1639314490845</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1639314490845</updated>
-    </task>
-    <task id="LOCAL-00015" summary="参数校验、统一异常处理、统一返回值">
-      <created>1639314622428</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1639314622428</updated>
-    </task>
-    <task id="LOCAL-00016" summary="参数校验、统一异常处理、统一返回值">
-      <created>1639314643982</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1639314643982</updated>
-    </task>
-    <task id="LOCAL-00017" summary="参数校验、统一异常处理、统一返回值">
-      <created>1639314748984</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1639314748984</updated>
+      <workItem from="1639465938074" duration="13808000" />
     </task>
     <task id="LOCAL-00018" summary="添加token注解拦截器，和用户修改信息接口">
       <created>1639380551941</created>
@@ -636,7 +566,77 @@
       <option name="project" value="LOCAL" />
       <updated>1639479895736</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="使用happy-captcha生成验证码">
+      <created>1639479991751</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1639479991751</updated>
+    </task>
+    <task id="LOCAL-00058" summary="使用happy-captcha生成验证码">
+      <created>1639480031101</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1639480031101</updated>
+    </task>
+    <task id="LOCAL-00059" summary="使用happy-captcha生成验证码">
+      <created>1639480063629</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1639480063629</updated>
+    </task>
+    <task id="LOCAL-00060" summary="使用happy-captcha生成验证码">
+      <created>1639480142365</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1639480142365</updated>
+    </task>
+    <task id="LOCAL-00061" summary="使用happy-captcha生成验证码">
+      <created>1639480171830</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1639480171830</updated>
+    </task>
+    <task id="LOCAL-00062" summary="使用happy-captcha生成验证码">
+      <created>1639480209409</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1639480209409</updated>
+    </task>
+    <task id="LOCAL-00063" summary="使用happy-captcha生成验证码">
+      <created>1639480242411</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1639480242411</updated>
+    </task>
+    <task id="LOCAL-00064" summary="使用happy-captcha生成验证码">
+      <created>1639480274796</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1639480274796</updated>
+    </task>
+    <task id="LOCAL-00065" summary="使用happy-captcha生成验证码">
+      <created>1639480416992</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1639480416992</updated>
+    </task>
+    <task id="LOCAL-00066" summary="使用happy-captcha生成验证码">
+      <created>1639480480072</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1639480480072</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
