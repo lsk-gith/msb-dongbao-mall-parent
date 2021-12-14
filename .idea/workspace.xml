@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="将验证的图片转成base64返回给前端">
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/JCaptchaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/code/util/JCaptchaUtil.java" afterDir="false" />
+    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="使用jcaptcha生成验证码">
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/HappyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/VerifyCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/VerifyCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/code/ImageCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/code/ImageCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,9 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../msb-dongbao-mall-parent\exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -291,42 +291,7 @@
       <workItem from="1639361942783" duration="68000" />
       <workItem from="1639366552668" duration="24370000" />
       <workItem from="1639399366375" duration="191000" />
-      <workItem from="1639465938074" duration="10422000" />
-    </task>
-    <task id="LOCAL-00002" summary="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner">
-      <created>1639104333225</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1639104333225</updated>
-    </task>
-    <task id="LOCAL-00003" summary="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner">
-      <created>1639104572039</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1639104572039</updated>
-    </task>
-    <task id="LOCAL-00004" summary="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册">
-      <created>1639137840290</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1639137840290</updated>
-    </task>
-    <task id="LOCAL-00005" summary="将注册功能完善好，使用数据库username唯一性，来防止用户名重复注册">
-      <created>1639137905594</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1639137905594</updated>
-    </task>
-    <task id="LOCAL-00006" summary="设置密码脱密">
-      <created>1639142056674</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1639142056674</updated>
+      <workItem from="1639465938074" duration="12167000" />
     </task>
     <task id="LOCAL-00007" summary="设置密码脱密">
       <created>1639142186833</created>
@@ -636,7 +601,42 @@
       <option name="project" value="LOCAL" />
       <updated>1639468402169</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="使用jcaptcha生成验证码">
+      <created>1639477905209</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1639477905209</updated>
+    </task>
+    <task id="LOCAL-00052" summary="使用jcaptcha生成验证码">
+      <created>1639477964834</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1639477964834</updated>
+    </task>
+    <task id="LOCAL-00053" summary="使用jcaptcha生成验证码">
+      <created>1639477998620</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1639477998620</updated>
+    </task>
+    <task id="LOCAL-00054" summary="使用jcaptcha生成验证码">
+      <created>1639478044464</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1639478044464</updated>
+    </task>
+    <task id="LOCAL-00055" summary="使用jcaptcha生成验证码">
+      <created>1639478152911</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1639478152911</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -721,6 +721,7 @@
     <MESSAGE value="添加token注解拦截器，和用户修改信息接口,token 增加部分代码" />
     <MESSAGE value="验证功能完善" />
     <MESSAGE value="将验证的图片转成base64返回给前端" />
-    <option name="LAST_COMMIT_MESSAGE" value="将验证的图片转成base64返回给前端" />
+    <MESSAGE value="使用jcaptcha生成验证码" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用jcaptcha生成验证码" />
   </component>
 </project>

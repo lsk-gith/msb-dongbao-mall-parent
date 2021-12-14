@@ -20,7 +20,8 @@ public class InterceptorConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/ums-member/load")
                 .excludePathPatterns("/user-member/register")
                 .excludePathPatterns("/code/**")
-                .excludePathPatterns("/jcaptcha/**");
+                .excludePathPatterns("/jcaptcha/**")
+                .excludePathPatterns("/happycpatcha/**");
     }
     @Bean
     public AuthInterceptor authInterceptor(){
