@@ -5,10 +5,11 @@ import com.msb.dongbao.common.base.code.ImageCode;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.util.Base64;
 
 /**
  * @Author: lsk
@@ -22,22 +23,34 @@ public class VerifyCodeController {
     String attrName = "verifyCode";
     @GetMapping("/generator")
     @TokenCheck(required = false)
-    public void generatorCode(HttpServletRequest request, HttpServletResponse response){
+    public String generatorCode(HttpServletRequest request, HttpServletResponse response){
         try {
             ImageCode imageCode = ImageCode.getInstance();
             String code = imageCode.getCode();
             System.out.println(code);
             request.getSession().setAttribute(attrName,code);
             ByteArrayInputStream image = imageCode.getImage();
-            response.setContentType("image/jpeg");
-            byte[] bytes = new byte[1024];
-            try (ServletOutputStream out = response.getOutputStream()){
-                while(image.read(bytes) != -1){
-                    out.write(bytes);
-                }
+            //使用字节流直接输出到前端
+//            response.setContentType("image/jpeg");
+//            byte[] bytes = new byte[1024];
+//            try (ServletOutputStream out = response.getOutputStream()){
+//                while(image.read(bytes) != -1){
+//                    out.write(bytes);
+//                }
+//            }
+            //使用base64转成字节输出到前端
+            ByteArrayOutputStream swapStream = new ByteArrayOutputStream();
+            byte[] buff = new byte[1024];
+            int r = 0;
+            while((r = image.read(buff,0,1024)) > 0){
+                swapStream.write(buff,0,r);
             }
+            byte[] data = swapStream.toByteArray();
+            return Base64.getEncoder().encodeToString(data);
+
         }catch (Exception e){
             System.out.println("codeImage generate error");
+            return "";
         }
     }
     @GetMapping("/verify")
