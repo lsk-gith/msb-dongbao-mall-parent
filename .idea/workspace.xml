@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="验证功能完善，">
+    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="将验证的图片转成base64返回给前端">
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/JCaptchaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/code/util/JCaptchaUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/VerifyCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/VerifyCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/code/ImageCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/code/ImageCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +100,7 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.msb.dongbao.portal.controller" />
       <recent name="com.msb.dongbao.api.entity" />
       <recent name="com.msb.dongbao.ums.entity" />
       <recent name="com.msb.dongbao.ums.mapper" />
@@ -285,14 +291,7 @@
       <workItem from="1639361942783" duration="68000" />
       <workItem from="1639366552668" duration="24370000" />
       <workItem from="1639399366375" duration="191000" />
-      <workItem from="1639465938074" duration="1514000" />
-    </task>
-    <task id="LOCAL-00001" summary="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner">
-      <created>1639103675318</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1639103675318</updated>
+      <workItem from="1639465938074" duration="10422000" />
     </task>
     <task id="LOCAL-00002" summary="分离成功，将接口分离到api中同时service中实现api的接口，webapplication中写入UmsMemberController,实现注册，注意主入口处要写scanBasePackages和MapperScanner">
       <created>1639104333225</created>
@@ -539,7 +538,105 @@
       <option name="project" value="LOCAL" />
       <updated>1639399546759</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="将验证的图片转成base64返回给前端">
+      <created>1639467512648</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1639467512648</updated>
+    </task>
+    <task id="LOCAL-00038" summary="将验证的图片转成base64返回给前端">
+      <created>1639467581588</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1639467581588</updated>
+    </task>
+    <task id="LOCAL-00039" summary="将验证的图片转成base64返回给前端">
+      <created>1639467612071</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1639467612071</updated>
+    </task>
+    <task id="LOCAL-00040" summary="将验证的图片转成base64返回给前端">
+      <created>1639467689004</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1639467689004</updated>
+    </task>
+    <task id="LOCAL-00041" summary="将验证的图片转成base64返回给前端">
+      <created>1639467978191</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1639467978191</updated>
+    </task>
+    <task id="LOCAL-00042" summary="将验证的图片转成base64返回给前端">
+      <created>1639468004291</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1639468004291</updated>
+    </task>
+    <task id="LOCAL-00043" summary="将验证的图片转成base64返回给前端">
+      <created>1639468055736</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1639468055736</updated>
+    </task>
+    <task id="LOCAL-00044" summary="将验证的图片转成base64返回给前端">
+      <created>1639468114017</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1639468114017</updated>
+    </task>
+    <task id="LOCAL-00045" summary="将验证的图片转成base64返回给前端">
+      <created>1639468146121</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1639468146121</updated>
+    </task>
+    <task id="LOCAL-00046" summary="将验证的图片转成base64返回给前端">
+      <created>1639468186164</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1639468186164</updated>
+    </task>
+    <task id="LOCAL-00047" summary="将验证的图片转成base64返回给前端">
+      <created>1639468236278</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1639468236278</updated>
+    </task>
+    <task id="LOCAL-00048" summary="将验证的图片转成base64返回给前端">
+      <created>1639468269627</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1639468269627</updated>
+    </task>
+    <task id="LOCAL-00049" summary="将验证的图片转成base64返回给前端">
+      <created>1639468337688</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1639468337688</updated>
+    </task>
+    <task id="LOCAL-00050" summary="将验证的图片转成base64返回给前端">
+      <created>1639468402169</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1639468402169</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,6 +720,7 @@
     <MESSAGE value="添加token注解拦截器，和用户修改信息接口" />
     <MESSAGE value="添加token注解拦截器，和用户修改信息接口,token 增加部分代码" />
     <MESSAGE value="验证功能完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="验证功能完善" />
+    <MESSAGE value="将验证的图片转成base64返回给前端" />
+    <option name="LAST_COMMIT_MESSAGE" value="将验证的图片转成base64返回给前端" />
   </component>
 </project>

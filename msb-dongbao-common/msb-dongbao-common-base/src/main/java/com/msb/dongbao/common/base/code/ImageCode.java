@@ -30,17 +30,47 @@ public class ImageCode {
         //图形缓冲区
         BufferedImage image = new BufferedImage(weight, height, BufferedImage.TYPE_INT_RGB);
         Graphics graphics = image.createGraphics();
-        graphics.setColor(new Color(229, 227, 222));
-        graphics.fillRect(0,0,weight,height);
-        graphics.setFont(new Font("宋体",Font.PLAIN, 30));
-        Random random = new Random();
-         this.code = "";
-        for(int i = 0; i < 6; i++) {
-          String s = String.valueOf(random.nextInt(10));
-          this.code += s;
-          graphics.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
-          graphics.drawString(s,weight/6*i+30,50);
-        }
+        //使用数字作为验证码
+//        graphics.setColor(new Color(229, 227, 222));
+//        graphics.fillRect(0,0,weight,height);
+//        graphics.setFont(new Font("宋体",Font.PLAIN, 30));
+//        Random random = new Random();
+//         this.code = "";
+//        for(int i = 0; i < 6; i++) {
+//          String s = String.valueOf(random.nextInt(10));
+//          this.code += s;
+//          graphics.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
+//          graphics.drawString(s,weight/6*i+30,50);
+//        }
+
+//        //使用加减乘除来验证
+//        Random random = new Random();
+//        int n1= random.nextInt(20);
+//        int n2= random.nextInt(20);
+//        graphics.setColor(new Color(229, 227, 222));
+//        graphics.setFont(new Font("宋体",Font.PLAIN, 30));
+//        graphics.fillRect(0,0,weight,height);
+//        graphics.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
+//        graphics.drawString(n1 + " ",(weight/6)*0 + 4, 60);
+//        int flage = (int)random.nextInt(4);
+//        String calculate = null;
+//        switch (flage){
+//            case 0: calculate = "+";
+//            case 1: calculate = "-";
+//            case 2: calculate = "*";
+//        }
+//        graphics.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
+//        graphics.drawString(calculate,(weight/6)*1 + 4, 60);
+//        graphics.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
+//        graphics.drawString(n2 + " ",(weight/6)*2 + 4, 60);
+//        graphics.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
+//        graphics.drawString( "=",(weight/6)*3 + 4, 60);
+//        graphics.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
+//        graphics.drawString( "?",(weight/6)*4 + 4, 60);
+//        int ans = flage == 0 ? (n1 + n2): (flage == 1 ? (n1 - n2): (n1 * n2));
+//        this.code = String.valueOf(ans);
+        //使用框架
+
         //收笔
         graphics.dispose();
         ByteArrayInputStream inputStream = null;
@@ -51,5 +81,10 @@ public class ImageCode {
         ImageIO.write(image,"jpeg",imageOutputStream);
         inputStream = new ByteArrayInputStream(outputStream.toByteArray());
         this.image = inputStream;
+
+
+
+
+
     }
 }
