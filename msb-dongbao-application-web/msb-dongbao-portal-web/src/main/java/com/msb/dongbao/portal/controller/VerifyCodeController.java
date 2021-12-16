@@ -1,7 +1,7 @@
 package com.msb.dongbao.portal.controller;
 
 import com.msb.dongbao.common.base.annotations.TokenCheck;
-import com.msb.dongbao.portal.controller.code.ImageCode;
+import com.msb.dongbao.common.base.code.ImageCode;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,8 +10,6 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.util.Base64;
 
 /**
  * @Author: lsk

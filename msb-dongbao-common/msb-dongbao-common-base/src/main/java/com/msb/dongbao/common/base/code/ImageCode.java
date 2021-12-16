@@ -1,4 +1,4 @@
-package com.msb.dongbao.portal.controller.code;
+package com.msb.dongbao.common.base.code;
 
 import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import lombok.Data;

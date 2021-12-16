@@ -1,4 +1,4 @@
-package com.msb.dongbao.portal.controller.code.util;
+package com.msb.dongbao.common.base.code.util;
 
 import com.octo.captcha.CaptchaFactory;
 import com.octo.captcha.component.image.backgroundgenerator.UniColorBackgroundGenerator;
