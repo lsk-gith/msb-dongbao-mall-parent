@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="kaptcha验证">
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/MySlidController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/util/SliderUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/util/VerificationVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/util/VerifyImageUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/JCaptchaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/JCaptchaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/VerifyCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/VerifyCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/code/ImageCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/code/ImageCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/code/util/JCaptchaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/src/main/java/com/msb/dongbao/common/base/code/util/JCaptchaUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/util" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14084506" />
@@ -88,11 +88,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-application-web\msb-dongbao-portal-web\src\main\java\com\msb\dongbao\portal\util" />
       <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-application-web\msb-dongbao-portal-web\src\main\java\com\msb\dongbao\portal\controller" />
       <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-api\mab-dongbao-ums\src\main\java\com\msb\dongbao\ums" />
       <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-service\msb-dongbao-ums\src\main\java\com\msb\dongbao\ums\mapper" />
       <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-service\msb-dongbao-ums\src\main\java\com\msb\dongbao\ums\mapper\xml" />
-      <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-service\msb-dongbao-ums\src\main\java\com\msb\dongbao\ums\entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lsk\IdeaProjects\msb-dongbao-mall-parent\msb-dongbao-service\msb-dongbao-ums\src\main\resources\mybatis\mapper" />
@@ -297,70 +297,7 @@
       <workItem from="1639366552668" duration="24370000" />
       <workItem from="1639399366375" duration="191000" />
       <workItem from="1639465938074" duration="21424000" />
-      <workItem from="1639622135449" duration="19290000" />
-    </task>
-    <task id="LOCAL-00045" summary="将验证的图片转成base64返回给前端">
-      <created>1639468146121</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1639468146121</updated>
-    </task>
-    <task id="LOCAL-00046" summary="将验证的图片转成base64返回给前端">
-      <created>1639468186164</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1639468186164</updated>
-    </task>
-    <task id="LOCAL-00047" summary="将验证的图片转成base64返回给前端">
-      <created>1639468236278</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1639468236278</updated>
-    </task>
-    <task id="LOCAL-00048" summary="将验证的图片转成base64返回给前端">
-      <created>1639468269627</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1639468269627</updated>
-    </task>
-    <task id="LOCAL-00049" summary="将验证的图片转成base64返回给前端">
-      <created>1639468337688</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1639468337688</updated>
-    </task>
-    <task id="LOCAL-00050" summary="将验证的图片转成base64返回给前端">
-      <created>1639468402169</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1639468402169</updated>
-    </task>
-    <task id="LOCAL-00051" summary="使用jcaptcha生成验证码">
-      <created>1639477905209</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1639477905209</updated>
-    </task>
-    <task id="LOCAL-00052" summary="使用jcaptcha生成验证码">
-      <created>1639477964834</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1639477964834</updated>
-    </task>
-    <task id="LOCAL-00053" summary="使用jcaptcha生成验证码">
-      <created>1639477998620</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1639477998620</updated>
+      <workItem from="1639622135449" duration="22873000" />
     </task>
     <task id="LOCAL-00054" summary="使用jcaptcha生成验证码">
       <created>1639478044464</created>
@@ -642,7 +579,70 @@
       <option name="project" value="LOCAL" />
       <updated>1639653278920</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="kaptcha验证">
+      <created>1639653701919</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653701919</updated>
+    </task>
+    <task id="LOCAL-00095" summary="kaptcha验证">
+      <created>1639653772158</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653772158</updated>
+    </task>
+    <task id="LOCAL-00096" summary="kaptcha验证">
+      <created>1639653816604</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653816604</updated>
+    </task>
+    <task id="LOCAL-00097" summary="kaptcha验证">
+      <created>1639653858941</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653858941</updated>
+    </task>
+    <task id="LOCAL-00098" summary="kaptcha验证">
+      <created>1639653918213</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653918213</updated>
+    </task>
+    <task id="LOCAL-00099" summary="kaptcha验证">
+      <created>1639653977723</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653977723</updated>
+    </task>
+    <task id="LOCAL-00100" summary="kaptcha验证">
+      <created>1639654039468</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1639654039468</updated>
+    </task>
+    <task id="LOCAL-00101" summary="kaptcha验证">
+      <created>1639654083912</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1639654083912</updated>
+    </task>
+    <task id="LOCAL-00102" summary="kaptcha验证">
+      <created>1639654113602</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1639654113602</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
