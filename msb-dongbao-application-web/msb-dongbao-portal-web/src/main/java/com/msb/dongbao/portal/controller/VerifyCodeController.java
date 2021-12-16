@@ -1,7 +1,7 @@
 package com.msb.dongbao.portal.controller;
 
 import com.msb.dongbao.common.base.annotations.TokenCheck;
-import com.msb.dongbao.common.base.code.ImageCode;
+import com.msb.dongbao.portal.controller.code.ImageCode;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

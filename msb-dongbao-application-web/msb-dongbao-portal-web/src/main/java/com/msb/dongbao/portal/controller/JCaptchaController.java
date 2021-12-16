@@ -1,7 +1,7 @@
 package com.msb.dongbao.portal.controller;
 
 import com.msb.dongbao.common.base.annotations.TokenCheck;
-import com.msb.dongbao.common.base.code.util.JCaptchaUtil;
+import com.msb.dongbao.portal.controller.code.util.JCaptchaUtil;
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
 import org.springframework.web.bind.annotation.GetMapping;

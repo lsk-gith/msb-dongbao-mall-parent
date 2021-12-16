@@ -1,4 +1,4 @@
-package com.msb.dongbao.common.base.code;
+package com.msb.dongbao.portal.controller.code;
 
 import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import lombok.Data;
@@ -9,7 +9,6 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.util.Random;
 
 /**
  * @Author: lsk

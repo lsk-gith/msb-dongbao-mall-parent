@@ -1,6 +1,5 @@
-package com.msb.dongbao.common.base.code.util;
+package com.msb.dongbao.portal.controller.code.util;
 
-import com.msb.dongbao.common.base.code.ImageCode;
 import com.octo.captcha.CaptchaFactory;
 import com.octo.captcha.component.image.backgroundgenerator.UniColorBackgroundGenerator;
 import com.octo.captcha.component.image.color.RandomRangeColorGenerator;
@@ -15,7 +14,6 @@ import com.octo.captcha.service.image.ImageCaptchaService;
 import com.octo.captcha.service.multitype.GenericManageableCaptchaService;
 
 import java.awt.*;
-import java.util.Random;
 
 /**
  * @Author: lsk

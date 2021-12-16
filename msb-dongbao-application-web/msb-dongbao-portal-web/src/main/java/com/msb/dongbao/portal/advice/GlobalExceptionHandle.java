@@ -1,5 +1,8 @@
 package com.msb.dongbao.portal.advice;
 
+import com.baomidou.kaptcha.exception.KaptchaException;
+import com.baomidou.kaptcha.exception.KaptchaIncorrectException;
+import com.baomidou.kaptcha.exception.KaptchaTimeoutException;
 import com.msb.dongbao.common.base.Result.ResultWrapper;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -22,5 +25,15 @@ public class GlobalExceptionHandle {
     @ExceptionHandler(LoginException.class)
     public ResultWrapper loginException(Exception e){
         return ResultWrapper.getFailBuilder().msg(e.getMessage()).build();
+    }
+    @ExceptionHandler(KaptchaException.class)
+    public String kacptchaExceptionHandle(KaptchaException e){
+        if(e instanceof KaptchaIncorrectException){
+            return "不正确！";
+        }else if(e instanceof KaptchaTimeoutException){
+            return "超时！";
+        }else {
+            return "没有找到！";
+        }
     }
 }
