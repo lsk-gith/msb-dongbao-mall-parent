@@ -6,6 +6,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   profiles:
     active: dev
+  redis:
+    host: 192.168.1.102
+    port: 6379
+    database: 0
+    connect-timeout: 5000
 mybatis-plus:
   mapper-locations: classpath*:com/msb/dongbao/ums/mapper/xml/*Mapper.xml
   type-aliases-package: com/msb/dongbao/ums/entity

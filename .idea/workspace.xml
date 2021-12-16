@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="使用happy-captcha生成验证码">
-      <change afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/EasyController.java" afterDir="false" />
+    <list default="true" id="86bd5a99-b7b8-4855-9388-acb31c847dd1" name="Changes" comment="使用easy-captcha生成验证码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/Interceptor/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/EasyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/java/com/msb/dongbao/portal/controller/EasyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-application-web/msb-dongbao-portal-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msb-dongbao-common/msb-dongbao-common-base/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,42 +292,8 @@
       <workItem from="1639361942783" duration="68000" />
       <workItem from="1639366552668" duration="24370000" />
       <workItem from="1639399366375" duration="191000" />
-      <workItem from="1639465938074" duration="13808000" />
-    </task>
-    <task id="LOCAL-00018" summary="添加token注解拦截器，和用户修改信息接口">
-      <created>1639380551941</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1639380551942</updated>
-    </task>
-    <task id="LOCAL-00019" summary="添加token注解拦截器，和用户修改信息接口">
-      <created>1639380761297</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1639380761297</updated>
-    </task>
-    <task id="LOCAL-00020" summary="添加token注解拦截器，和用户修改信息接口">
-      <created>1639380816331</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1639380816331</updated>
-    </task>
-    <task id="LOCAL-00021" summary="添加token注解拦截器，和用户修改信息接口">
-      <created>1639380855420</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1639380855420</updated>
-    </task>
-    <task id="LOCAL-00022" summary="添加token注解拦截器，和用户修改信息接口">
-      <created>1639380956414</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1639380956414</updated>
+      <workItem from="1639465938074" duration="21424000" />
+      <workItem from="1639622135449" duration="6858000" />
     </task>
     <task id="LOCAL-00023" summary="添加token注解拦截器，和用户修改信息接口">
       <created>1639381063175</created>
@@ -636,7 +603,42 @@
       <option name="project" value="LOCAL" />
       <updated>1639480480072</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="使用easy-captcha生成验证码">
+      <created>1639481337389</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1639481337389</updated>
+    </task>
+    <task id="LOCAL-00068" summary="使用easy-captcha生成验证码">
+      <created>1639481393672</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1639481393672</updated>
+    </task>
+    <task id="LOCAL-00069" summary="使用easy-captcha生成验证码">
+      <created>1639481433024</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1639481433024</updated>
+    </task>
+    <task id="LOCAL-00070" summary="使用easy-captcha生成验证码">
+      <created>1639481467976</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1639481467976</updated>
+    </task>
+    <task id="LOCAL-00071" summary="使用easy-captcha生成验证码">
+      <created>1639481520045</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1639481520045</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -723,6 +725,7 @@
     <MESSAGE value="将验证的图片转成base64返回给前端" />
     <MESSAGE value="使用jcaptcha生成验证码" />
     <MESSAGE value="使用happy-captcha生成验证码" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用happy-captcha生成验证码" />
+    <MESSAGE value="使用easy-captcha生成验证码" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用easy-captcha生成验证码" />
   </component>
 </project>
